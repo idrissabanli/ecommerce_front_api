@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        form{
+            text-align: center;
+        }
+        small{
+            color: red;
+        }
+    </style>
+</head>
+<body style="display: none;">
+    
+    <h1 class="text-center">Add Product Page</h1>
+    <div class="container">
+        <div class="row ">
+            <div class="d-flex col justify-content-center align-items-center" style="height: 110vh;" >
+
+            <form method="POST">
+                <small id="non_field_errors" ></small>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" class="form-control" id="title" >
+                    <small class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" class="form-control" name="description" cols="30" rows="10"></textarea>
+                    <small class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="number" name="price" class="form-control" id="price" aria-describedby="passwordHelp">
+                    <small class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="discount_price">Discount price</label>
+                    <input type="text" name="discount_price" class="form-control" id="discount_price" aria-describedby="firstNameHelp">
+                    <small id="firstNameHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="amount_by_unit">Amount by unit</label>
+                    <input type="number" name="amount_by_unit" class="form-control" id="amount_by_unit" aria-describedby="lastNameHelp">
+                    <small id="amount_by_unit" class="form-text text-muted"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="unit">Unit</label>
+                    <input type="text" name="unit" class="form-control" id="unit" aria-describedby="imageHelp">
+                    <small id="unit" class="form-text text-muted"></small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="InputImage">Image</label>
+                    <input type="file" name="main_image" class="form-control" id="InputImage" aria-describedby="imageHelp">
+                    <small id="imageHelp" class="form-text text-muted"></small>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script src="add_product.js"></script>
+
+
+</body>
+</html>
